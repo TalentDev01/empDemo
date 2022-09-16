@@ -1,0 +1,35 @@
+<div *ngIf="data.flag">
+  <container-element [ngSwitch]="data.flag">
+    <!-- the same view can be shown in more than one case -->
+    <div *ngSwitchCase="'view'">
+      <h2 mat-dialog-title>Employee Details</h2>
+      <mat-dialog-content class="mat-typography" style="display: grid">
+        <mat-label>Name : {{ data["data"]["ename"] }}</mat-label>
+        <mat-label>Department : {{ data["data"]["dname"] }}</mat-label>
+      </mat-dialog-content>
+      <mat-dialog-actions align="end">
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>OK</button>
+      </mat-dialog-actions>
+    </div>
+    <div *ngSwitchCase="'edte'">
+      <h2 mat-dialog-title>Edit Employee Details</h2>
+      <mat-dialog-content class="mat-typography" style="display: grid">
+        <mat-label>Name : {{ data["data"]["ename"] }}</mat-label>
+      </mat-dialog-content>
+      <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>NO</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>YES</button>
+      </mat-dialog-actions>
+    </div>
+    <div *ngSwitchCase="'dele'">
+      <h2 mat-dialog-title>Delete Employee</h2>
+      <mat-dialog-content class="mat-typography" style="display: grid">
+        <mat-label>Name : {{ data["data"]["ename"] }}</mat-label>
+      </mat-dialog-content>
+      <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>NO</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>YES</button>
+      </mat-dialog-actions>
+    </div>
+  </container-element>
+</div>

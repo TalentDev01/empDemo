@@ -1,0 +1,23 @@
+mat-card {
+    margin: 2em auto;
+    text-align: center;
+    display: block;
+    height: 15em;
+    width: 30em;
+    border: 1px solid;
+  }
+  
+  mat-form-field {
+    display: block;
+  }
+
+  .mat-cust-spacer {
+    flex: 1 1 auto;
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }

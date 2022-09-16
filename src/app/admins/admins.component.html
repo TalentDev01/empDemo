@@ -1,0 +1,17 @@
+<!-- <ag-grid-angular
+    style="width: 800px; height: 300px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">
+    [defaultColDef]="defaultColDef">
+</ag-grid-angular> -->
+<ag-grid-angular
+  style="width:85em; height:60em; margin-left:30em; margin-top:2em;"
+  class="ag-theme-alpine"
+  [rowData]="rowData"
+  [defaultColDef]="defaultColDef"
+  [columnDefs]="columnDefs"
+  [frameworkComponents]="frameworkComponents"
+  (gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>

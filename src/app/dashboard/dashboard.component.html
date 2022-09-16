@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" style="padding-right: 2em;">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Employee System</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button (click)="logout()" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        Logout <mat-icon>logout</mat-icon>     
+    </button>
+  </mat-toolbar>
+<app-users></app-users>
+<app-admins></app-admins>
